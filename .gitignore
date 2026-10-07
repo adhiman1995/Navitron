@@ -1,0 +1,33 @@
+# Generated tile data — rebuild with the scripts, never commit.
+web/data/*.pmtiles
+web/data/*.pmtiles.part
+web/data/.terrain-*.pmtiles
+
+# Self-hosted glyphs are generated from the openmaptiles/fonts release.
+web/fonts/
+
+# Vendored browser builds, reproduced by scripts/sync-vendor.sh from node_modules.
+web/vendor/
+
+# Downloaded tooling and caches.
+vendor-jars/
+.planetiler/
+.terrain-cache/
+.font-cache/
+
+# Test output
+tests/screenshots/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp

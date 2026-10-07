@@ -1,0 +1,4 @@
+# Python dependencies for the build scripts.
+#   python3 -m pip install -r requirements.txt
+pmtiles>=3.4.0
+certifi>=2024.2.2   # only needed where the stock SSL context has no CA bundle

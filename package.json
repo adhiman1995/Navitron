@@ -1,0 +1,25 @@
+{
+  "name": "navitron",
+  "version": "1.0.0",
+  "description": "Navitron \u2014 self-hosted 3D vector + terrain map for India. MapLibre GL JS, PMTiles, Planetiler, OpenStreetMap. No third-party map services at runtime.",
+  "scripts": {
+    "postinstall": "bash scripts/sync-vendor.sh",
+    "vendor": "bash scripts/sync-vendor.sh",
+    "fonts": "python3 scripts/fetch_fonts.py",
+    "build:map": "bash scripts/build-map.sh",
+    "build:terrain": "python3 scripts/build_terrain.py",
+    "serve": "python3 scripts/serve.py",
+    "validate:style": "node scripts/validate-style.mjs",
+    "test": "bash tests/run_all.sh"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "maplibre-gl": "^6.13.0",
+    "pmtiles": "^4.5.0"
+  },
+  "devDependencies": {
+    "@maplibre/maplibre-gl-style-spec": "^26.4.4"
+  },
+  "private": true,
+  "type": "module"
+}
